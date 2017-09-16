@@ -10,7 +10,7 @@
 
 <!-- Header containing Name of page and nav bar links -->
   <div class="entire-container">
-  <div class="header-container">
+  <div class="header-container clearfix">
       <ul>
         <div class="name">
           <li>Josh Siverson</li>
@@ -32,14 +32,19 @@
 <!-- Main content container. Within the container are 2 sections. left-side and right side. 
     .left-side renders the main content and will be dynamic to the content in each page.
     .right-side renders the social media buttons and is static on each page.  -->
-  <div class="container">
+  <div class="container clearfix">
     
     <section class="left-side">
       <h2>About Me</h2>
       <hr class="hr-left">
-      <img src="assets/images/Josh_linkedin.jpeg" alt="Josh's Profile picture" width="150px" class="profilePhoto">
-      
-      <p class="left-side-paragraph"> I am pursuing a career in  software engineering and am currently working through an intenstive course at Univerysity of California Berkeley. This page highlights the projects I have created.</p>
+      <div class="profile-paragraph">
+        <div class="inner-left">
+          <img src="assets/images/Josh_linkedin.jpeg" alt="Josh's Profile picture" width="150px" class="profilePhoto">
+        </div>
+        <div class="inner-left">
+         <p class="left-side-paragraph"> I am pursuing a career in  software engineering and am currently working through an intenstive course at Univerysity of California Berkeley. This page highlights the projects I have created.</p>
+        </div>
+      </div>
     </section>
 
     <section class="right-side">

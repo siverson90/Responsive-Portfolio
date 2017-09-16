@@ -214,14 +214,35 @@ li a:hover{
 
 }
 
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: block;
+
+}
+
+.clearfix:after{
+  clear: both;
+}
+
 @media screen and (max-width: 980px) {
   .header-container{
     width: 95%;
     margin: 0 auto;
     display: inline-block;
     overflow: auto;
-
   }
+
+  .clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: block;
+
+}
+
+.clearfix:after{
+  clear: both;
+}
 
 .container{
   clear: both;
@@ -251,6 +272,16 @@ li a:hover{
     margin-left:20px;
   }
 
+  .inner-left{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .profilePhoto, .left-side-paragraph{
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+  }
 }
 
 
