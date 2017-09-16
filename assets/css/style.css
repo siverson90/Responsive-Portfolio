@@ -196,14 +196,20 @@ li a:hover{
 
 .banner{
   background-color: #4aaaa5;
-  position: relative;
-  bottom: 70px;
+  position: absolute;
   width: 100%;
+  text-align: center;
+  top: 100px;
+  padding: 20px 0;
+  color: white;
+  /*position: absolute;
+  bottom: 0px;
+  width: 50%;
   height: 40px;
   z-index: 1;
   text-align: center;
   color: white;
-  padding-top: 10px;
+  padding-top: 10px;*/
 }
 
 .img-container{
@@ -211,6 +217,7 @@ li a:hover{
   width: 45%;
   height: 150px;
   margin: 20px 10px;
+  position: relative;
 
 }
 
@@ -235,7 +242,6 @@ li a:hover{
 
 .container{
   clear: both;
-
 }
 
   footer{
@@ -271,6 +277,10 @@ li a:hover{
     width: 100%;
     float: left;
     margin: 5px auto;
+  }
+
+  .img-container{
+    width: 100%;
   }
 }
 
