@@ -2,11 +2,8 @@
 by classes. */
 
 body {
-  width: 960px;
-  height: 100%;
   font-family: Georgia, Times, "Times New Roman",serif;
-  margin: 0px 0px 0px 0px;
-  background-image: url(../images/concrete-texture.png)
+  background-image: url(../images/concrete-texture.png);
 
 }
 
@@ -39,9 +36,9 @@ footer {
   border-top: 10px solid #4aaaa5;
   clear: both;
   display: block;
-  width: 960px;
-  position: fixed;
+  width: 100%;
   bottom: 0;
+  z-index: 1;
 }
 
 footer p {
@@ -71,14 +68,16 @@ li a:hover{
 
 /*static on each page*/
 .entire-container{
-  margin: 20px
+  margin: 20px;
+  width: 100%;
+  max-width: 960px;
 }
 
 .container {
   width: 100%;
   margin: 0px auto;
-  background-image: url(../images/concrete-texture.png);
   padding-bottom: 100px;
+  clear: both;
 
 }
 
@@ -131,7 +130,7 @@ li a:hover{
 
 .header-container {
   background-color: white;
-  width: 960px;
+  width: 100%;
   height: 75px;
   border-bottom: 2px solid #cccccc;
   margin: 0;
@@ -214,4 +213,65 @@ li a:hover{
   margin: 20px 10px;
 
 }
+
+@media screen and (max-width: 980px) {
+  .header-container{
+    width: 95%;
+    margin: 0 auto;
+    display: inline-block;
+    overflow: auto;
+
+  }
+
+.container{
+  clear: both;
+
+}
+
+  footer{
+    width: 95%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+    clear: both;
+  }
+
+  .left-side, .right-side {
+    clear:both;
+  }
+
+  .left-side{
+    float: left;
+    width: 40%;
+    margin-right:20px;
+  }
+  .right-side{
+    float: right;
+    width: 30%;
+    margin-left:20px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+  
+  .left-side, .right-side {
+    display: block;
+    position: static;
+    margin-left: 55px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .left-side, .right-side {
+    display: block;
+    position: static;
+    margin-left: 55px;
+  }
+}
+
 
