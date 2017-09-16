@@ -245,17 +245,17 @@ li a:hover{
     overflow: auto;
   }
 
-.container{
-  clear: both;
-}
+  .container{
+    clear: both;
+  }
 
-.nav-item-list,{
-  margin: auto 10px;
-}
+  .nav-item-list,{
+    margin: auto 10px;
+  }
 
-.name{
-  margin: auto 0px auto 30px;
-}
+  .name{
+    margin: auto 0px auto 30px;
+  }
 
   footer{
     width: 95%;
@@ -294,11 +294,22 @@ li a:hover{
 
   .img-container{
     width: 100%;
-    max-height: 150px;
+    max-width: 486px;
+    padding-right: auto;
+    padding-left: auto;
+    display: block;
+    clear: both;
+    position: relative;
   }
 
   .gallery{
-    margin: 5px 10px;
+    width: 100%;
+  }
+
+  .banner{
+    position: absolute;
+    top: 280px;
+    z-index: 1;
   }
 }
 
