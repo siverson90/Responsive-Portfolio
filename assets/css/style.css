@@ -82,7 +82,7 @@ li a:hover{
 
 .container {
   width: 100%;
-  margin: 0px auto;
+  margin: 0px 10px;
   padding-bottom: 100px;
   clear: both;
   max-width: 960px;
