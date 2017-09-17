@@ -317,10 +317,21 @@ li a:hover{
 
 @media screen and (max-width: 768px) {
   
-  footer, .header-container {
+  .header-container {
     max-width: 768px;
     width: 100%;
+    margin:0px;
+    padding: 0px;
   }
+
+  footer { 
+    max-width: 768px;
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+    /*may need to clean up stick footer*/
+  }
+  
 
   .left-side, .right-side{
     float: left;
@@ -343,6 +354,16 @@ li a:hover{
     width: 100%;
   }
 
+  .img-container{
+    width: 45%;
+    display: inline-block;
+    clear: none;
+}
+
+.banner{
+  position: absolute;
+  top: 175px;
+}
 }
 
 @media screen and (max-width: 640px) {
