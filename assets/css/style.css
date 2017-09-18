@@ -81,7 +81,7 @@ li a:hover{
 }
 
 .container {
-  width: 100%;
+  width: 98%;
   margin: 0px 10px;
   padding-bottom: 100px;
   clear: both;
@@ -245,6 +245,10 @@ li a:hover{
     overflow: auto;
   }
 
+  input{
+    border:1px solid rgb(238, 238, 238);
+  }
+
   .container{
     clear: both;
   }
@@ -265,11 +269,14 @@ li a:hover{
     clear: both;
   }
 
+  form{
+    border: 1px solid rgb(238, 238, 238);
+  }
+
 
   .left-side{
     float: left;
     width: 55%;
-    margin-left:30px;
     height: auto;
     margin-top: 30px;
   }
@@ -333,12 +340,16 @@ li a:hover{
   }
   
 
-  .left-side, .right-side{
+  .left-side{
+    float: left;
+    width: 100%;
+    max-width: 768px;
+  }
+
+  .right-side{
     float: left;
     max-width: 768px;
     width: 100%;
-    margin-left: 30px;
-    margin-right: 55px;
   }
 
   .socialBtnItems{
@@ -364,10 +375,25 @@ li a:hover{
   position: absolute;
   top: 175px;
 }
+
+.entire-container{
+    max-width: 768px;
+    width: 100%;
+}
+
 }
 
 @media screen and (max-width: 640px) {
 
+  .entire-container{
+    max-width: 640px;
+    width: 100%;
+}
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
   .header-container{
     max-width: 640px;
     width: 100%;
@@ -386,6 +412,7 @@ li a:hover{
     margin: 0px;
     max-height: 75px;
     height: 100%;
+    padding-bottom: 5px;
   }
 
   .nav-item-list{
@@ -409,10 +436,19 @@ li a:hover{
   }
 
   .left-side, .right-side {
-    display: block;
-    margin-left: 55px;
+    margin-left: none;
+    margin-right: none;
   }
 
+  .img-container{
+    width: 100%;
+    align-content: center;
+  }
+
+  .banner{
+  position: absolute;
+  top: 300px;
+  }
 }
 
 
