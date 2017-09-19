@@ -251,6 +251,7 @@ li a:hover{
 
   .container{
     clear: both;
+    max-width: 85%;
   }
 
   .nav-item-list,{
@@ -320,8 +321,6 @@ li a:hover{
   }
 }
 
-
-
 @media screen and (max-width: 768px) {
   
   .header-container {
@@ -339,7 +338,6 @@ li a:hover{
     /*may need to clean up stick footer*/
   }
   
-
   .left-side{
     float: left;
     width: 100%;
@@ -379,6 +377,10 @@ li a:hover{
 .entire-container{
     max-width: 768px;
     width: 100%;
+}
+
+.container{
+  max-width: 85%;
 }
 
 }
